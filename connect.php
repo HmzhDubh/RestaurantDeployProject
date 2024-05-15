@@ -13,7 +13,7 @@ $password = "IVIeeZo_2015";
 //az
 $con = mysqli_init();
 mysqli_ssl_set($con,NULL,NULL, "{path to CA cert}", NULL, NULL);
-mysqli_real_connect($conn, "restaurant-db.mysql.database.azure.com", "dbuser", "{your_password}", "{your_database}", 3306, MYSQLI_CLIENT_SSL);
+mysqli_real_connect($conn, "restaurant-db.mysql.database.azure.com", "dbuser", "$password", "restaurantdb", 3306, MYSQLI_CLIENT_SSL);
 //az
 // Create connection
 $conn = new mysqli($hostname,$username,$password);
